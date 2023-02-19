@@ -3,8 +3,9 @@
 //search = document.querySelector('#search');
 
 const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.carboninterface.com/api/v1/auth");
+xhr.open("POST", "https://www.carboninterface.com/api/v1/estimates");
 xhr.setRequestHeader("Authorization", "Bearer xS7W8Yyg5tIqwKaQtCnurQ");
+xhr.setRequestHeader("Content-Type", "application/json");
 xhr.send(JSON.stringify({
     "type": "electricity",
         "electricity_unit": "mwh",
