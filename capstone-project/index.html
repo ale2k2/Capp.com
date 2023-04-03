@@ -4,43 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbon Emissions Project | Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Capstone Project</title>
 </head>
 <body>
-    <!--Navigation Bar-->
-    <nav class="navBar"> 
-        <div class="navBarContainer">
-            <a href="/">CAPP</a>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <span class="text-success"><i class="bi bi-globe p-1"></i></span>
+                CAPP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#calc" class="nav-link">Calculate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#test" class="nav-link">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#news" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="navBarMenu">
-            <li class="navBarItem">
-                <a href="/infopage.html">Info</a>
-            </li>
-            <li class="navBarItem">
-                <a href="/calcpage.html">Calculate</a>
-            </li>
-            <li class="navBarItem">
-                <a href="/testpage.html">Test</a>
-            </li>
-            <li class="navBarItem">
-                <a href="/newspage.html">News</a>
-            </li>
-        </ul>
     </nav>
 
-    <!--Main Section-->
-    <div class="main">
-        <h1>Carbon Footprint</h1>
-    </div>
 
-    <!--Footer Section-->
-    <!--
-    <div class="footer">
-        <h1>Footer</h1>
-    </div>
-    -->
-    <script src="app.js"></script>
-    <noscript>You need to enable Javascript to view the full website.</noscript>
+    <!--Showcase-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Carbon <span class="text-success">Emmisions</span></h1>
+                    <p class="lead my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum aut, expedita tempore quibusdam quod impedit sequi nam eaque eos aperiam cumque ullam provident inventore aspernatur, neque itaque id temporibus!</p>
+                </div>
+                <img class="img-fluid w-25 d-none d-sm-block" src="clean-energy.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!--Webpages-->
+    <section class="p-5" id="info">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid float-start w-75" src="clean-energy.jpg" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn About The Dangers of Carbon Emmisions</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis, quidem corrupti nemo doloribus explicabo?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repellat molestias, illo accusamus vel, rem beatae minima, sequi assumenda dolores harum aut cupiditate enim vitae voluptates repudiandae nesciunt iste saepe?
+                    </p>
+                    <a href="/infopage.html" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light" id="calc">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Calculate Your Household Carbon Footprint</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis, quidem corrupti nemo doloribus explicabo?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repellat molestias, illo accusamus vel, rem beatae minima, sequi assumenda dolores harum aut cupiditate enim vitae voluptates repudiandae nesciunt iste saepe?
+                    </p>
+                    <a href="/calcpage.html" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i>Learn More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img class="img-fluid w-75 float-end" src="clean-energy.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5" id="test">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid w-75 float-start" src="clean-energy.jpg" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Test Your Knowledge About The Dangers of Carbon Emmisions</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis, quidem corrupti nemo doloribus explicabo?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repellat molestias, illo accusamus vel, rem beatae minima, sequi assumenda dolores harum aut cupiditate enim vitae voluptates repudiandae nesciunt iste saepe?
+                    </p>
+                    <a href="/testpage.html" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light" id="news">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Read About The Dangers of Carbon Emmisions</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis, quidem corrupti nemo doloribus explicabo?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repellat molestias, illo accusamus vel, rem beatae minima, sequi assumenda dolores harum aut cupiditate enim vitae voluptates repudiandae nesciunt iste saepe?
+                    </p>
+                    <a href="/newspage.html" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right"></i>Learn More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img class="img-fluid w-75 float-end" src="clean-energy.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="p-3 bg-light text-dark text-center position-relative text-sm-start">
+        <div class="container d-sm-flex align-items-center justify-content-between">
+            <div>
+                <p class="lead">Copyright &copy; 2023 CAPP.com</p>
+            </div>
+             <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-3">
+                Learn More
+                </h6>
+                <p>
+                <a href="#" class="text-reset">About Us</a>
+                </p>
+                <p>
+                <a href="https://sdgs.un.org" class="text-reset" target="_blank">About SDGs</a>
+                </p>
+                <p>
+                <a href="https://www.rollins.edu" class="text-reset" target="_blank">About Rollins</a>
+                </p>
+            </div>
+            <a href="#" class="position-absolute bottom-50% end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
