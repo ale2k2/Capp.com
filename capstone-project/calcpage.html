@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Gonna be some alignment issues here but I'm just
-gonna make sure the content is there for now-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbon Emissions Project | Calculate</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Carbon Emmisions Project | Calculate</title>
 </head>
 <body>
-    <!--Navigation Bar-->
-    <nav class="navBar"> 
-        <div class="navBarContainer">
-            <a href="/">CAPP</a>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand">
+                <span class="text-success"><i class="bi bi-globe p-1"></i></span>
+                CAPP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Calculate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="navBarMenu">
-            <li class="navBarItem">
-                <a href="/infopage.html">Info</a>
-            </li>
-            <li class="navBarItem">
-                <a href="/calcpage.html">Calculate</a>
-            </li>
-            <li class="navBarItem">
-                <a href="/testpage.html">Test</a>
-            </li>
-            <li class="navBarItem">
-                <a href="/newspage.html">News</a>
-            </li>
-        </ul>
     </nav>
-    
-    <h1>Calculate</h1>
-    <div id="input">
-        <h2>Input:</h2>
-        <form>
-            <h4>Type:</h4>
-            <input type="" name="" value="">
 
-            <h4>Electricity Value (in MWH):</h4>
-            <!--input is number value for electricity in MWH?
-            should probably have what MWH is cuz I don't even know 
-            also how are they supposed to even know this value or
-            measure it themselves?-->
-            <input type="" name="" value="">
+    <!--Showcase-->
+    <section class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Calculate Your Household Carbon <span class="text-success">Footprint</span></h1>
+                    <p class="lead my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum aut, expedita tempore quibusdam quod impedit sequi nam eaque eos aperiam cumque ullam provident inventore aspernatur, neque itaque id temporibus!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h4>State of Residence:</h4>
-            <input type="" name="" value="">
+    <!--Calculate-->
+    <section class="bg-light text-dark p-5">
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                  <label for="electricity">Electricity Usage (kWh/month)</label>
+                  <input type="number" class="form-control" id="electricity" name="electricity" required>
+                </div>
+                <div class="mb-3">
+                  <label for="natural-gas">Natural Gas Usage (therms/month)</label>
+                  <input type="number" class="form-control" id="natural-gas" name="natural-gas" required>
+                </div>
+                <div class="mb-3">
+                  <label for="vehicle-miles">Vehicle Miles Traveled (miles/year)</label>
+                  <input type="number" class="form-control" id="vehicle-miles" name="vehicle-miles" required>
+                </div>
+                <div class="mb-3">
+                  <label for="air-travel">Air Travel (miles/year)</label>
+                  <input type="number" class="form-control" id="air-travel" name="air-travel" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Calculate</button>
+              </form>
+            <div>
+                <h2 class="text-center">Your Household Carbon Footprint: <span id="result"></span> tons CO2e/year</h2>
+            </div>
+        </div>
+    </section>
 
-        </form>
-    </div>
-    <div id="output">
+    <!--Footer-->
+    <footer class="p-3 bg-dark text-light text-center position-relative text-sm-start">
+        <div class="container d-sm-flex align-items-center justify-content-between">
+            <div>
+                <p class="lead">Copyright &copy; 2023 CAPP.com</p>
+            </div>
+             <!-- Grid column -->
+             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-3">
+                Learn More
+                </h6>
+                <p>
+                <a href="#" class="text-reset">About Us</a>
+                </p>
+                <p>
+                <a href="https://sdgs.un.org" class="text-reset" target="_blank">About SDGs</a>
+                </p>
+                <p>
+                <a href="https://www.rollins.edu" class="text-reset" target="_blank">About Rollins</a>
+                </p>
+            </div>
+            <a href="#" class="position-absolute bottom-50% end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+    </footer>
 
-    </div>
-    <div id="reccomendations"> 
-        <h1>Reccomendations for you</h1>
-            <ol>
-                <li></li>
-            </ol>
-    </div>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="calculate.js"></script>
 </body>
 </html>
