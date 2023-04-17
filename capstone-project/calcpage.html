@@ -54,8 +54,11 @@
     </section>
 
     <!--Calculate-->
-    <section class="bg-light text-dark p-5">
+    <section class="bg-light text-dark p-3">
         <div class="container">
+            <div>
+                <h1 class="text-center"><u>Electricity</u></h1>
+            </div>
             <form>
                 <div class="mb-3">
                   <label for="electricity">Electricity Usage (kWh/month)</label>
@@ -73,10 +76,133 @@
                   <label for="air-travel">Air Travel (miles/year)</label>
                   <input type="number" class="form-control" id="air-travel" name="air-travel" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Calculate</button>
+                <button type="submit" class="btn btn-primary" id="buttonOne">Calculate</button>
               </form>
             <div>
-                <h2 class="text-center">Your Household Carbon Footprint: <span id="result"></span> tons CO2e/year</h2>
+                <h3 class="text-center">Household Carbon Footprint Based on Electricity: <span id="result"></span> tons CO2e/year</h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light text-dark p-3">
+        <div class="container">
+            <div>
+                <h1 class="text-center"><u>Flight</u></h1>
+            </div>
+            <form id="form2">
+                <div class="mb-3">
+                  <label for="electricity2">Electricity Usage (kWh/month)</label>
+                  <input type="number" class="form-control" id="electricity2" name="electricity2" required>
+                </div>
+                <div class="mb-3">
+                  <label for="natural-gas2">Natural Gas Usage (therms/month)</label>
+                  <input type="number" class="form-control" id="natural-gas2" name="natural-gas2" required>
+                </div>
+                <div class="mb-3">
+                  <label for="vehicle-miles2">Vehicle Miles Traveled (miles/year)</label>
+                  <input type="number" class="form-control" id="vehicle-miles2" name="vehicle-miles2" required>
+                </div>
+                <div class="mb-3">
+                  <label for="air-travel2">Air Travel (miles/year)</label>
+                  <input type="number" class="form-control" id="air-travel2" name="air-travel2" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="buttonTwo">Calculate</button>
+              </form>
+            <div>
+                <h3 class="text-center">Household Carbon Footprint Based on Flight: <span id="result2"></span> tons CO2e/year</h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light text-dark p-3">
+        <div class="container">
+            <div>
+                <h1 class="text-center"><u>Shipping</u></h1>
+            </div>
+            <form id="form3">
+                <div class="mb-3">
+                  <label for="electricity3">Electricity Usage (kWh/month)</label>
+                  <input type="number" class="form-control" id="electricity3" name="electricity3" required>
+                </div>
+                <div class="mb-3">
+                  <label for="natural-gas3">Natural Gas Usage (therms/month)</label>
+                  <input type="number" class="form-control" id="natural-gas3" name="natural-gas3" required>
+                </div>
+                <div class="mb-3">
+                  <label for="vehicle-miles3">Vehicle Miles Traveled (miles/year)</label>
+                  <input type="number" class="form-control" id="vehicle-miles3" name="vehicle-miles3" required>
+                </div>
+                <div class="mb-3">
+                  <label for="air-travel3">Air Travel (miles/year)</label>
+                  <input type="number" class="form-control" id="air-travel3" name="air-travel3" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="buttonThree">Calculate</button>
+              </form>
+            <div>
+                <h3 class="text-center">Household Carbon Footprint Based on Shipping: <span id="result3"></span> tons CO2e/year</h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light text-dark p-3">
+        <div class="container">
+            <div>
+                <h1 class="text-center"><u>Vehicle</u></h1>
+            </div>
+            <form id="form4">
+                <div class="mb-3">
+                  <label for="electricity4">Electricity Usage (kWh/month)</label>
+                  <input type="number" class="form-control" id="electricity4" name="electricity4" required>
+                </div>
+                <div class="mb-3">
+                  <label for="natural-gas4">Natural Gas Usage (therms/month)</label>
+                  <input type="number" class="form-control" id="natural-gas4" name="natural-gas4" required>
+                </div>
+                <div class="mb-3">
+                  <label for="vehicle-miles4">Vehicle Miles Traveled (miles/year)</label>
+                  <input type="number" class="form-control" id="vehicle-miles4" name="vehicle-miles4" required>
+                </div>
+                <div class="mb-3">
+                  <label for="air-travel4">Air Travel (miles/year)</label>
+                  <input type="number" class="form-control" id="air-travel4" name="air-travel4" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="buttonFour">Calculate</button>
+              </form>
+            <div>
+                <h3 class="text-center">Household Carbon Footprint Based on Vehicle: <span id="result4"></span> tons CO2e/year</h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light text-dark p-3">
+        <div class="container">
+            <div>
+                <h1 class="text-center"><u>Fuel Combustion</u></h1>
+            </div>
+            <form id="form5">
+                <div class="mb-3">
+                  <label for="electricity5">Electricity Usage (kWh/month)</label>
+                  <input type="number" class="form-control" id="electricity5" name="electricity5" required>
+                </div>
+                <div class="mb-3">
+                  <label for="natural-gas5">Natural Gas Usage (therms/month)</label>
+                  <input type="number" class="form-control" id="natural-gas5" name="natural-gas5" required>
+                </div>
+                <div class="mb-3">
+                  <label for="vehicle-miles5">Vehicle Miles Traveled (miles/year)</label>
+                  <input type="number" class="form-control" id="vehicle-miles5" name="vehicle-miles5" required>
+                </div>
+                <div class="mb-3">
+                  <label for="air-travel5">Air Travel (miles/year)</label>
+                  <input type="number" class="form-control" id="air-travel5" name="air-travel5" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="buttonFive">Calculate</button>
+              </form>
+            <div>
+                <h3 class="text-center">Household Carbon Footprint Based on Fuel Combustion: <span id="result5"></span> tons CO2e/year</h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light text-dark p-5">
+        <div class="container">
+            <div>
+                <h1 class="text-center">Total Household Carbon Footprint: <span id="result6"></span> tons CO2e/year</h1>
             </div>
         </div>
     </section>
@@ -90,17 +216,15 @@
              <!-- Grid column -->
              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-3">
-                Learn More
-                </h6>
+                <h6 class="text-uppercase fw-bold mb-3">Learn More</h6>
                 <p>
-                <a href="#" class="text-reset">About Us</a>
+                    <a href="#" class="text-reset">About Us</a>
                 </p>
                 <p>
-                <a href="https://sdgs.un.org" class="text-reset" target="_blank">About SDGs</a>
+                    <a href="https://sdgs.un.org" class="text-reset" target="_blank">About SDGs</a>
                 </p>
                 <p>
-                <a href="https://www.rollins.edu" class="text-reset" target="_blank">About Rollins</a>
+                    <a href="https://www.rollins.edu" class="text-reset" target="_blank">About Rollins</a>
                 </p>
             </div>
             <a href="#" class="position-absolute bottom-50% end-0 p-3">
