@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 li a:hover {
     background-color: #555;
 }
