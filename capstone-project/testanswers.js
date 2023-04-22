@@ -16,7 +16,7 @@ function checkAnswers() {
     let q12 = document.querySelector('input[name="q12"]:checked');
 
 	// Check the answers
-	let correctAnswers = ["a", "c", "a", "a", "a", "c", "a", "b", "c", "d", "c", "c"];
+	let correctAnswers = ["b", "c", "a", "a", "a", "c", "a", "b", "c", "d", "c", "c"];
 	let userAnswers = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12];
 
 	let numCorrect = 0;
