@@ -25,16 +25,16 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Info</a>
+                        <a href="/infopage.html" class="nav-link">Info</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Calculate</a>
+                        <a href="/calcpage.html" class="nav-link">Calculate</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Test</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">News</a>
+                        <a href="/newspage.html" class="nav-link">News</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
                     <h1>Test Your Knowledge on Carbon <span class="text-success">Emmisions</span></h1>
-                    <p class="lead my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum aut, expedita tempore quibusdam quod impedit sequi nam eaque eos aperiam cumque ullam provident inventore aspernatur, neque itaque id temporibus!</p>
+                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum quasi quae dolores optio sunt? Placeat minima corporis inventore, saepe voluptas necessitatibus ea aut error assumenda consequuntur veniam, corrupti blanditiis?</p>
                 </div>
             </div>
         </div>
@@ -56,269 +56,110 @@
     <!--Test-->
     <section class="bg-light text-dark p-5 text-left">
         <div class="container">
-            <h3 class="">Is global warming real?</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Yes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  No
-                </label>
-            </div>
-            
-          <!--oxygen-->
-            <h3>Which of the following are not greenhouse gases?</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  carbon dioxide
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  methane
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
-                  oxygen
-                </label>
-              </div>
+            <form id="mathTest">
+                <label for="q1"><h3>1. Is Global Warming Real?</h3></label><br>
+                <input type="radio" name="q1" value="a"> a) Yes<br>
+                <input type="radio" name="q1" value="b"> b) No<br><br>
+        
+                <!--oxygen-->
+                <label for="q2"><h3>2. Which of the following are not greenhouse gases?</h3></label><br>
+                <input type="radio" name="q2" value="a"> a) Carbon Dioxide<br>
+                <input type="radio" name="q2" value="b"> b) Methane<br>
+                <input type="radio" name="q2" value="c"> c) Oxygen<br><br>
+        
+                <!--True-->
+                <label for="q3"><h3>3. True or False: The Earth acts like a greenhouse that catches and traps heat from the sun.</h3></label><br>
+                <input type="radio" name="q3" value="a"> a) True<br>
+                <input type="radio" name="q3" value="b"> b) False<br><br>
 
-            <!--True-->
-            <h3>The Earth acts like a greenhouse that catches and traps heat from the sun.</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  True
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  False
-                </label>
-            </div>
+                <!--Temp goes up-->
+                <label for="q4"><h3>4. What is the greenhouse effect?</h3></label><br>
+                <input type="radio" name="q4" value="a"> a) The warming of a planet due to trapped radiation.<br>
+                <input type="radio" name="q4" value="b"> b) The cooling of Earth due to air pollution.<br>
+                <input type="radio" name="q4" value="c"> c) The heating of a solid, such as a rock.<br><br>
 
-            <!--Temp goes up-->
-            <h3>What is the greenhouse effect</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    The warming of a planet due to trapped radiation.
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  The cooling of Earth due to air pollution.
-                </label>
-              </div>
-             <div class="form-check">
-                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                 <label class="form-check-label" for="flexRadioDefault1">
-                      The heating of a solid, such as a rock.
-                </label>
-            </div>
+                <!--15 tons-->
+                <label for="q5"><h3>5. The average American adds how much carbon dioxide to the atmosphere per year?</h3></label><br>
+                <input type="radio" name="q5" value="a"> a) 15 tons<br>
+                <input type="radio" name="q5" value="b"> b) 1 megaton<br>
+                <input type="radio" name="q5" value="c"> c) 1/2 ton<br><br>
 
-            <!--15 tons-->
-            <h3>The average American adds how much carbon dioxide to the atmosphere per year</h3>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  15 tons
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  1 megaton
-                </label>
-            </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              half a ton
-              </label>
-            </div>
+                <!--49 percent-->
+                <label for="q6"><h3>6. In the 10,000 years before the Industrial Revolution in 1751, carbon dioxide levels rose less than 6 percent. Since then, they've risen by:</h3></label><br>
+                <input type="radio" name="q6" value="a"> a) 11%<br>
+                <input type="radio" name="q6" value="b"> b) 62%<br>
+                <input type="radio" name="q6" value="c"> c) 49%<br><br>
 
-          <!--49 percent-->
-          <h3>In the 10,000 years before the Industrial Revolution in 1751, 
-            carbon dioxide levels rose less than 6 percent. Since then, they've risen by: 
-          </h3>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                  11 percent 
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                62 percent
-              </label>
-          </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  49 percent 
-              </label>
-          </div>
+                <!--Deforestation-->
+                <label for="q7"><h3>7. Burning fossil fuels is the major source of human produced carbon dioxide. But what is the second leading source?</h3></label><br>
+                <input type="radio" name="q7" value="a"> a) Deforestation<br>
+                <input type="radio" name="q7" value="b"> b) Volcanic activity<br>
+                <input type="radio" name="q7" value="c"> c) Cow belching<br><br>
 
-          <!--Deforestation-->
-          <h3>Burning fossil fuels is the major source of human produced carbon dioxide. 
-            But what is the second leading source?
-          </h3>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                  Deforestation
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Volcanic activity
-              </label>
-          </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  cow belching
-              </label>
-          </div>
+                <!--Carbon dioxide-->
+                <label for="q8"><h3>8. What is the main control knob governing Earth's temperature?</h3></label><br>
+                <input type="radio" name="q8" value="a"> a) Methane<br>
+                <input type="radio" name="q8" value="b"> b) Carbon dioxide<br>
+                <input type="radio" name="q8" value="c"> c) Water vapor<br>
+                <input type="radio" name="q8" value="d"> d) Nitrous oxide<br><br>
 
-          <!--Carbon dioxide-->
-          <h3>What is the main control knob governing Earth's temperature?
-          </h3>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Methane
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Carbon dioxide
-              </label>
-          </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Water vapor
-              </label>
-          </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-              Nitrous oxide
-          </label>
-      </div>
-    
-        <!--it lingers in the atmosphere-->
-        <h3>We produce more than 36 billion tons of carbon dioxide per year. Where does the majority of it end up? 
-        </h3>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              It is inhaled by trees for photosynthesis
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-              It enters our oceans
-            </label>
+                <!--it lingers in the atmosphere-->
+                <label for="q9"><h3>9. We produce more than 36 billion tons of carbon dioxide per year. Where does the majority of it end up?</h3></label><br>
+                <input type="radio" name="q9" value="a"> a) It is inhaled by trees for photosynthesis<br>
+                <input type="radio" name="q9" value="b"> b) It enters our oceans<br>
+                <input type="radio" name="q9" value="c"> c) It lingers in the atmosphere<br><br>
+
+                <!--Shutting down all fossil fuel power plants-->
+                <label for="q10"><h3>10. Which of the following would have the biggest impact on reducing carbon emmissions?</h3></label><br>
+                <input type="radio" name="q10" value="a"> a) Growing our own vegtables<br>
+                <input type="radio" name="q10" value="b"> b) Stopping deforestation<br>
+                <input type="radio" name="q10" value="c"> c) Taking all fossil fuel-burning vehicles off the road<br>
+                <input type="radio" name="q10" value="d"> d) Shutting down all fossil fuel power plants<br><br>
+
+                <!--Earth, Venus & Mars-->
+                <label for="q11"><h3>11. Which planets have carbon dioxide in their atmosphere?</h3></label><br>
+                <input type="radio" name="q11" value="a"> a) Earth<br>
+                <input type="radio" name="q11" value="b"> b) Earth & Venus<br>
+                <input type="radio" name="q11" value="c"> c) Earth, Venus, & Mars<br><br>
+
+                <!--They would keep rising for about a decade, plateau for decades, and then very slowly drop.-->
+                <label for="q12"><h3>12. If humans stopped emitting carbon dioxide tomorrow, what would happen to global temperatures?</h3></label><br>
+                <input type="radio" name="q12" value="a"> a) They would immediately begin to drop<br>
+                <input type="radio" name="q12" value="b"> b) They would immediately stop rising, flatten out, and then drop<br>
+                <input type="radio" name="q12" value="c"> c) They would keep rising for about a decade, plateau for decades, and then very slowly drop<br><br>
+        
+                <button type="button" id="submitButton" class="btn btn-primary" onclick="checkAnswers()">Submit</button>
+            </form>
+        
+            <h3 id="result" class="text-center"></h3>
         </div>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                It lingers in the atmosphere 
-            </label>
-        </div>
+    </section>
 
-          <!--Shutting down all fossil fuel power plants-->
-          <h3>Which of the following would have the biggest impact on reducing carbon emmissions?
-          </h3>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Growing our own vegtables
-              </label>
+    <!--Footer-->
+    <footer class="p-3 bg-dark text-light text-center position-relative text-sm-start">
+        <div class="container d-sm-flex align-items-center justify-content-between">
+            <div>
+                <p class="lead">Copyright &copy; 2023 CAPP.com</p>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Stopping deforestation 
-              </label>
-          </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Taking all fossil fuel-burning vehicles off the road
-              </label>
-          </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-              Shutting down all fossil fuel power plants
-          </label>
-      </div>
+             <!-- Grid column -->
+             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-3">
+                Learn More
+                </h6>
+                <p>
+                <a href="https://sdgs.un.org" class="text-reset" target="_blank">About SDGs</a>
+                </p>
+                <p>
+                <a href="https://www.rollins.edu" class="text-reset" target="_blank">About Rollins</a>
+                </p>
+            </div>
+            <a href="#" class="position-absolute bottom-50% end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+    </footer>
 
-          <!--Earth, Venus & Mars-->
-          <h3> Which planets have carbon dioxide in their atmosphere?
-          </h3>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Earth
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Earth & Venus 
-              </label>
-          </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Earth, Venus & Mars
-              </label>
-          </div> 
-
-          <!--They would keep rising for about a decade, plateau for decades, and then very slowly drop.-->
-          <h3> If humans stopped emitting carbon dioxide tomorrow, what would happen to global temperatures?
-          </h3>
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                They would immediately begin to drop.
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                They would immediately stop rising, flatten out, and then drop. 
-              </label>
-          </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  They would keep rising for about a decade, plateau for decades, and then very slowly drop.
-              </label>
-          </div>  
-    
-        </div>
-</section>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="testanswers.js"></script>
 </body>
 </html>
