@@ -35,3 +35,4 @@ function checkAnswers() {
     }
     document.querySelector('#submitButton').disabled = true;
 }
+
